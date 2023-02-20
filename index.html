@@ -234,7 +234,7 @@
         const minHeight = 630000
         const maxHeight = 840000
         function startClock(height) {
-            const value = (maxHeight - height) * 0.00095
+            const value = (height - minHeight) * 0.00095
             blockHeightValue.innerHTML = height
             arrow.style.transform = `rotate(${value}deg)`;
         }
